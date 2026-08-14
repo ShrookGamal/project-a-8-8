@@ -1174,3 +1174,6 @@ body { background: var(--dark); color: var(--text-white); overflow-x: hidden; wi
         font-size: 1.6rem;
     }
 }
+.side-anchor {
+    font-size: 1.0rem !important;
+}
