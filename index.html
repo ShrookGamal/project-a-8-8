@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>شركة بأس للنقل البري | القوة اللوجستية</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&family=Orbitron:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/dist/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <div id="loader">
+        <div class="loader-wrap">
+            <img src="images/logo.png" alt="BAAS" class="loader-logo">
+            <div class="scan-line"></div>
+        </div>
+    </div>
+
+    <div class="master-bg">
+        <div class="orb o1"></div>
+        <div class="orb o2"></div>
+        <div class="orb o3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <nav class="super-nav">
+        <div class="nav-container">
+            <div class="logo-zone">
+                <img src="images/logo.png" alt="Logo" class="main-logo">
+                <div class="brand-titles">
+                    
+                </div>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-anchor active">الرئيسية</a></li>
+                <li><a href="#about" class="nav-anchor">عن الشركة</a></li>
+                <li><a href="#services" class="nav-anchor">خدماتنا</a></li>
+                <li><a href="#blog" class="nav-anchor">المدونة</a></li>
+                <li><a href="#why-us" class="nav-anchor">لماذا نحن</a></li>
+                <li><a href="#contact" class="nav-anchor">تواصل معنا</a></li>
+            </ul>
+
+            <div class="nav-btns">
+                <a href="tel:0594368198" class="neon-call desk-only">
+                    <i class="fas fa-phone-volume"></i> 0594368198
+                </a>
+                <div class="sidebar-toggle" id="side-open">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <aside class="glass-sidebar" id="sidebar">
+        <div class="side-close" id="side-close">&times;</div>
+        <div class="side-inner">
+            <div class="side-header">BAAS</div>
+            <div class="side-links">
+                <a href="#home" class="side-anchor active">الرئيسية</a>
+                <a href="#about" class="side-anchor">عن الشركة</a>
+                <a href="#services" class="side-anchor">خدماتنا</a>
+                <a href="#blog" class="side-anchor">المدونة</a>
+                <a href="#why-us" class="side-anchor">لماذا نحن</a>
+                <a href="#contact" class="side-anchor">تواصل معنا</a>
+            </div>
+        </div>
+    </aside>
+
+    <section id="home" class="hero-master">
+        <div class="hero-content">
+            <div class="hero-info">
+                <div class="status-badge"><span></span> متاح الآن في جميع أنحاء المملكة</div>
+                <h1 class="giant-text">بأس .. قوة <span>تتحرك</span> <br> لتصنع الفارق</h1>
+                <p class="promo-text">نحن شريكك الموثوق في شراء السكراب والمعادن وتوريد مواد البناء. نمتلك أسطولاً جباراً من التريلات والسطحات والقلابات. متخصصون في تأجير الحاويات في الرياض وتوفير المعدات الثقيلة بأعلى معايير الجودة.</p>
+                
+                <div class="feature-grid">
+                    <div class="f-card">
+                        <i class="fas fa-truck-fast"></i>
+                        <h4>نقل سريع</h4>
+                    </div>
+                    <div class="f-card">
+                        <i class="fas fa-microchip"></i>
+                        <h4>دقة رقمية</h4>
+                    </div>
+                    <div class="f-card">
+                        <i class="fas fa-shield-heart"></i>
+                        <h4>أمان تام</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-form">
+                <div class="ultra-glass-card">
+                    <div class="card-head">
+                        <h3>منصة الحجز السريع</h3>
+                        <p>املأ البيانات وفريقنا سيتواصل معك فوراً</p>
+                    </div>
+                    <form id="main-order-form">
+                        <div class="input-wrap">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="fname" placeholder="اسمك الكامل" required>
+                        </div>
+                        <div class="input-wrap">
+                            <i class="fas fa-tools"></i>
+                            <select id="fservice" required>
+                                <option value="" disabled selected>اختر الخدمة المطلوبة</option>
+                                <option value="شراء سكراب">شراء سكراب ومعادن</option>
+                                <option value="توريد بناء">توريد مواد بناء</option>
+                                <option value="قلابات">تأجير قلابات سكراب</option>
+                                <option value="سطحات">تأجير سطحات</option>
+                                <option value="حاويات">تأجير حاويات مخلفات (الرياض)</option>
+                                <option value="توانك">تأجير توانك مياه</option>
+                                <option value="بوكلينات">تأجير بوكلينات وقماشات</option>
+                            </select>
+                        </div>
+                        <div class="input-wrap">
+                            <i class="fas fa-map-location-dot"></i>
+                            <input type="text" id="floc" placeholder="الموقع (المدينة/الحي)" required>
+                        </div>
+                        <button type="submit" class="submit-glow">
+                            <span>تأكيد الطلب عبر واتساب</span>
+                            <i class="fab fa-whatsapp"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="about" class="about-baas-elite">
+    <div class="elite-bg-overlay"></div>
+    
+    <div class="container-elite">
+        <div class="about-grid">
+            
+            <div class="visual-side">
+                <div class="image-box-wrapper">
+                    <img src="images/IMG-20260811-WA0030.jpg" alt="Baas Fleet" class="hero-image">
+                    
+                    <div class="experience-card fade-in">
+                        <span class="exp-number" data-count="20">0</span>
+                        <span class="exp-label">عاماً من الخبرة</span>
+                    </div>
+
+                    <div class="badge-float safe-badge fade-in">
+                        <div class="icon-circle"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="badge-txt">
+                            <h6>أمان بنسبة 100%</h6>
+                            <p>تأمين لوجستي شامل</p>
+                        </div>
+                    </div>
+
+                    <div class="badge-float fleet-badge fade-in">
+                        <div class="icon-circle"><i class="fa-solid fa-truck-moving"></i></div>
+                        <div class="badge-txt">
+                            <h6>أسطول المملكة</h6>
+                            <p>تغطية لجميع المناطق</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-side">
+                <div class="content-head fade-in">
+                    <div class="tag-line">
+                        <span class="bar"></span>
+                        <span class="text">الريادة في النقل والتوريد</span>
+                    </div>
+                    <h2 class="main-heading">بأس للنقل البري.. عقدان من <span>الثقة والاحترافية</span></h2>
+                    <p class="main-description">تأسست شركة بأس لتكون الركيزة الأساسية في قطاع الخدمات اللوجستية بالمملكة العربية السعودية. على مدار 20 عاماً، نجحنا في بناء منظومة متكاملة تشمل شراء السكراب والمعادن، توريد مواد البناء، وتأجير أحدث المعدات الثقيلة. نحن لا ننقل البضائع فحسب، بل ننقل قصص نجاح شركائنا بكل أمان ودقة.</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card fade-in">
+                        <div class="f-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                        <div class="f-info">
+                            <h5>تغطية شاملة للمملكة</h5>
+                            <p>خدمات التريلات والسطحات تصل لجميع المدن والمناطق.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="f-icon"><i class="fa-solid fa-recycle"></i></div>
+                        <div class="f-info">
+                            <h5>تجارة المعادن والسكراب</h5>
+                            <p>نشتري ونورد المعادن بأسعار تنافسية وفق البورصات العالمية.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="f-icon"><i class="fa-solid fa-city"></i></div>
+                        <div class="f-info">
+                            <h5>حاويات الرياض الحصرية</h5>
+                            <p>إدارة مخلفات المشاريع داخل العاصمة بأقصى سرعة واستجابة.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="f-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <div class="f-info">
+                            <h5>تأجير المعدات الثقيلة</h5>
+                            <p>بوكلينات وقماشات جاهزة للمشاريع الإنشائية والصناعية الضخمة.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-footer-elite fade-in">
+                    <div class="stat-item">
+                        <div class="num"><span class="counter" data-target="1500">0</span>+</div>
+                        <div class="lab">مشروع منجز</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="num"><span class="counter" data-target="100">0</span>+</div>
+                        <div class="lab">شاحنة ومعدة</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="num"><span class="counter" data-target="100">0</span>%</div>
+                        <div class="lab">التزام بالمواعيد</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id="services" class="baas-services-premium">
+    <div class="industrial-pattern-bg">
+        <div class="gear-slow g-1"></div>
+        <div class="gear-slow g-2"></div>
+        <div class="grid-overlay-services"></div>
+    </div>
+
+    <div class="container-services">
+        <div class="services-intro fade-in">
+            <span class="badge-gold">شركاء النجاح في كل مشروع</span>
+            <h2 class="title-main">منظومة الخدمات اللوجستية <span>الأكثر تكاملاً</span></h2>
+            <p class="desc-main">نحن لا نقدم مجرد خدمات، بل نوفر حلولاً استراتيجية تضمن استمرارية أعمالكم بكفاءة تامة. أسطولنا الحديث وخبرتنا العميقة تحت تصرفكم في جميع أنحاء المملكة.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card glass-card fade-in">
+                <div class="card-icon"><i class="fa-solid fa-recycle"></i></div>
+                <h4>شراء السكراب والمعادن</h4>
+                <p>نحن وجهتكم الموثوقة لتسييل أصولكم المعدنية. نشتري جميع أنواع سكراب الحديد، النحاس، والألمنيوم بأفضل الأسعار المحدثة وفق البورصات العالمية، مع توفير فرق احترافية للنقل والوزن الفوري.</p>
+                <div class="card-footer">تغطية: المملكة العربية السعودية</div>
+            </div>
+
+            <div class="service-card glass-card fade-in">
+                <div class="card-icon"><i class="fa-solid fa-trowel-bricks"></i></div>
+                <h4>توريد مواد البناء</h4>
+                <p>نوفر أجود خامات مواد البناء والتعمير مباشرة من المحاجر والمصادر الأصلية. نلتزم بتوريد الرمل، الحصى، والأسمنت بجدولة دقيقة تضمن عدم توقف مواقع العمل لديكم مهما كانت ضخامة الاحتياج.</p>
+                <div class="card-footer">تغطية: المملكة العربية السعودية</div>
+            </div>
+
+            <div class="service-card glass-card fade-in">
+                <div class="card-icon"><i class="fa-solid fa-truck-pickup"></i></div>
+                <h4>تأجير قلابات السكراب</h4>
+                <p>أسطول من القلابات المجهزة خصيصاً لنقل الأحمال الثقيلة والسكراب. تتميز قلاباتنا بالقوة والمتانة، مع سائقين محترفين ملمين بكافة طرق المملكة لضمان وصول شحناتكم بأمان وفي وقت قياسي.</p>
+                <div class="card-footer">تغطية: المملكة العربية السعودية</div>
+            </div>
+
+            <div class="service-card glass-card fade-in">
+                <div class="card-icon"><i class="fa-solid fa-trailer"></i></div>
+                <h4>تأجير السطحات</h4>
+                <p>حلول مثالية لنقل المعدات، الهياكل، والسيارات عبر سطحات حديثة ومؤمنة. نوفر خيارات متعددة الأحجام لتناسب نوع الحمولة، مع أنظمة تثبيت متطورة تضمن استقرار الحمولة طوال فترة الرحلة.</p>
+                <div class="card-footer">تغطية: المملكة العربية السعودية</div>
+            </div>
+
+            <div class="service-card glass-card highlight-card fade-in">
+                <div class="card-icon"><i class="fa-solid fa-dumpster"></i></div>
+                <h4>تأجير حاويات المخلفات</h4>
+                <p>الخدمة الرائدة لإدارة مخلفات المشاريع والمباني. نوفر حاويات بأحجام مختلفة لتنظيم المواقع الإنشائية، مع خدمة تفريغ واستبدال فورية لضمان بيئة عمل نظيفة ومنظمة وفق اشتراطات الأمانة.</p>
+                <div class="card-footer special">حصرى: مدينة الرياض فقط</div>
+            </div>
+
+            <div class="service-card glass-card fade-in">
+                <div class="card-icon"><i class="fa-solid fa-faucet-drip"></i></div>
+                <h4>تأجير توانك المياه</h4>
+                <p>توريد مياه للمواقع الإنشائية والمجمعات السكنية عبر توانك نظيفة ومطابقة للمواصفات. نضمن لكم استمرارية التوريد في حالات الطوارئ أو الاحتياجات الدورية بجدول زمني لا يحيد عن الدقة.</p>
+                <div class="card-footer">تغطية: المملكة العربية السعودية</div>
+            </div>
+
+            <div class="service-card glass-card fade-in">
+                <div class="card-icon"><i class="fa-solid fa-tractor"></i></div>
+                <h4>تأجير بوكلينات وقماشات</h4>
+                <p>نوفر أحدث المعدات الثقيلة من بوكلينات وقماشات ذات أداء عالٍ. معداتنا تخضع لصيانة دورية صارمة لضمان أعلى مستويات الإنتاجية في مواقع الحفر والردم والتسوية، مما يوفر عليكم الوقت والتكلفة.</p>
+                <div class="card-footer">تغطية: المملكة العربية السعودية</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="trucks-gallery" class="baas-gallery-section">
+    <div class="gallery-container">
+        <div class="gallery-intro reveal">
+            <div class="baas-tag">آلياتنا في الميدان</div>
+            <h2 class="gallery-title">قوة النقل <span>والتجهيزات الميدانية</span></h2>
+            <p class="gallery-sub">شاحنات ومعدات ثقيلة مجهزة بأعلى المواصفات لضمان أداء استثنائي في كافة المواقع.</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="truck-card reveal">
+                <div class="img-wrapper"><img src="images/IMG-20260811-WA0007.jpg" alt="Truck"></div>
+            </div>
+            <div class="truck-card reveal">
+                <div class="img-wrapper"><img src="images/IMG-20260811-WA0014.jpg" alt="Truck"></div>
+            </div>
+            <div class="truck-card reveal">
+                <div class="img-wrapper"><img src="images/IMG-20260811-WA0015.jpg" alt="Truck"></div>
+            </div>
+            <div class="truck-card reveal">
+                <div class="img-wrapper"><img src="images/IMG-20260811-WA0016.jpg" alt="Truck"></div>
+            </div>
+            <div class="truck-card reveal">
+                <div class="img-wrapper"><img src="images/IMG-20260811-WA0018.jpg" alt="Truck"></div>
+            </div>
+            <div class="truck-card reveal">
+                <div class="img-wrapper"><img src="images/IMG-20260811-WA0022.jpg" alt="Truck"></div>
+            </div>
+            <div class="truck-card reveal">
+                <div class="img-wrapper"><img src="images/IMG-20260811-WA0023.jpg" alt="Truck"></div>
+            </div>
+            <div class="truck-card reveal">
+                <div class="img-wrapper"><img src="images/IMG-20260811-WA0024.jpg" alt="Truck"></div>
+            </div>
+            <div class="truck-card reveal">
+                <div class="img-wrapper"><img src="images/IMG-20260811-WA0026.jpg" alt="Truck"></div>
+            </div>
+            <div class="truck-card reveal">
+                <div class="img-wrapper"><img src="images/IMG-20260811-WA0027.jpg" alt="Truck"></div>
+            </div>
+            <div class="truck-card reveal">
+                <div class="img-wrapper"><img src="images/IMG-20260811-WA0029.jpg" alt="Truck"></div>
+            </div>
+            <div class="truck-card reveal">
+                <div class="img-wrapper"><img src="images/IMG-20260811-WA0030.jpg" alt="Truck"></div>
+            </div>
+            <div class="truck-card reveal">
+                <div class="img-wrapper"><img src="images/IMG-20260811-WA0031.jpg" alt="Truck"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="blog" class="baas-blog-section">
+    <div class="blog-container">
+        <div class="blog-intro">
+            <span class="year-badge">عام 2026 | رؤية مستقبلية</span>
+            <h2 class="title">مدونة <span>بأس اللوجستية</span></h2>
+            <p class="subtitle">مقالات دسمة تستعرض كواليس العمل اللوجستي، وتجارة المعادن، وإدارة النفايات الإنشائية بأحدث تقنيات العصر.</p>
+        </div>
+
+        <div class="blog-grid">
+            <article class="blog-card reveal">
+                <div class="blog-img">
+                    <img src="images/IMG-20260811-WA0015.jpg" alt="Scrap Metal">
+                    <div class="blog-date">12 يناير 2026</div>
+                </div>
+                <div class="blog-body">
+                    <h3>اقتصاد السكراب والمعادن في 2026</h3>
+                    <p>كيف تحول سوق المعادن في المملكة إلى ركيزة اقتصادية؟ نستعرض في هذا المقال آليات التسعير العالمية وكيف تضمن بأس أفضل قيمة لعملائها...</p>
+                    <a href="details.html?id=scrap" class="read-more-btn">اقرأ التفاصيل <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </article>
+
+            <article class="blog-card reveal">
+                <div class="blog-img">
+                    <img src="images/IMG-20260811-WA0007.jpg" alt="Logistics">
+                    <div class="blog-date">10 يناير 2026</div>
+                </div>
+                <div class="blog-body">
+                    <h3>أساطيل النقل البري وتحديات الطرق</h3>
+                    <p>العمل اللوجستي عبر أنحاء المملكة يتطلب قوة وتحملاً. تعرف على مواصفات شاحناتنا وكيف ندير رحلاتنا عبر آلاف الكيلومترات بدقة متناهية...</p>
+                    <a href="details.html?id=transport" class="read-more-btn">اقرأ التفاصيل <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </article>
+
+            <article class="blog-card reveal">
+                <div class="blog-img">
+                    <img src="images/IMG-20260811-WA0031.jpg" alt="Riyadh Waste">
+                    <div class="blog-date">08 يناير 2026</div>
+                </div>
+                <div class="blog-body">
+                    <h3>إدارة نفايات المشاريع في قلب الرياض</h3>
+                    <p>الرياض 2026 مدينة لا تنام. إدارة الحاويات والمخلفات الإنشائية تتطلب سرعة استجابة فائقة لتجنب الغرامات وتعطيل المواقع. بأس هي الحل...</p>
+                    <a href="details.html?id=waste" class="read-more-btn">اقرأ التفاصيل <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<section id="testimonials" class="baas-reviews-section">
+    <div class="reviews-container">
+        <div class="reviews-header reveal">
+            <span class="review-tag">ثقة عملائنا</span>
+            <h2 class="review-title">تجارب <span>واقعية</span> من الميدان</h2>
+            <p class="review-subtitle">نفخر بخدمة مئات الأفراد في مشاريعهم الخاصة، وتوفير حلول النقل والمعدات بأعلى كفاءة.</p>
+        </div>
+
+        <div class="reviews-grid">
+            <div class="review-card reveal">
+                <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">استأجرت حاويات لموقع البناء الخاص ببيتي في الرياض، الصدق وسرعة الاستجابة كانت فوق التوقعات. تم تبديل الحاوية في وقت قياسي جداً.</p>
+                <h4 class="client-name">محمد العتيبي</h4>
+            </div>
+
+            <div class="review-card reveal">
+                <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">بعت سكراب الحديد اللي عندي لشركة بأس، ميزان دقيق وتعامل راقي جداً واستلمت المبلغ فوراً بدون أي تأخير. أنصح بالتعامل معهم بشدة.</p>
+                <h4 class="client-name">فهد الشمري</h4>
+            </div>
+
+            <div class="review-card reveal">
+                <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">خدمة توانك المياه ممتازة، التزام تام بالمواعيد المتفق عليها والمياه نظيفة والتعامل مع السائقين كان مريحاً واحترافياً للغاية.</p>
+                <h4 class="client-name">عبدالله القحطاني</h4>
+            </div>
+
+            <div class="review-card reveal">
+                <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">طلبت سطحة لنقل معدات خاصة لمزرعتي، الخدمة كانت سريعة جداً والسعر كان مناسباً جداً ومنافساً مقارنة بالأسعار الموجودة في السوق.</p>
+                <h4 class="client-name">خالد الدوسري</h4>
+            </div>
+
+            <div class="review-card reveal">
+                <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">بوكلينات شركة بأس نظيفة وجديدة، ساعدتني كثيراً في تسوية أرضي بسرعة وبدون أي أعطال فنية تعطل العمل، شكراً لكم على هذه الجودة.</p>
+                <h4 class="client-name">أحمد المطيري</h4>
+            </div>
+
+            <div class="review-card reveal">
+                <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">تعاملت معهم في توريد الرمل والبطحاء لمشروع بناء منزلي، الالتزام بالكمية المطلوبة والموعد كان 100%. احترافية حقيقية في التعامل.</p>
+                <h4 class="client-name">سلطان الحربي</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="why-us" class="baas-why-modern">
+    <div class="abstract-bg">
+        <div class="glow-point p1"></div>
+        <div class="glow-point p2"></div>
+    </div>
+    
+    <div class="modern-container">
+        <div class="why-header-modern reveal">
+            <span class="modern-tag">عناصر التميز</span>
+            <h2 class="modern-title">لماذا تُعد <span>بأس</span> الخيار الاستراتيجي؟</h2>
+            <p class="modern-para">نحن لا نبيع وعوداً، بل نقدم حلولاً لوجستية واقعية مبنية على خبرة ميدانية عميقة في قلب السوق السعودي.</p>
+        </div>
+
+        <div class="dynamic-masonry">
+            <div class="masonry-item area-1 reveal">
+                <div class="m-card">
+                    <div class="m-icon"><i class="fa-solid fa-medal"></i></div>
+                    <div class="m-content">
+                        <h3>20 عاماً من النضج اللوجستي</h3>
+                        <p>منذ عام 2006 ونحن في الميدان، خبرتنا ليست مجرد سنوات بل هي فهم عميق لمتطلبات النقل، السكراب، وتوريد المواد في أقسى الظروف المناخية والجغرافية بالمملكة.</p>
+                    </div>
+                    <span class="m-number">01</span>
+                </div>
+            </div>
+
+            <div class="masonry-item area-2 reveal">
+                <div class="m-card">
+                    <div class="m-icon"><i class="fa-solid fa-truck-moving"></i></div>
+                    <div class="m-content">
+                        <h3>جاهزية الأسطول (24/7)</h3>
+                        <p>نتبع سياسة "الصيانة الوقائية" الصارمة. كل شاحنة ومعدة في بأس تخضع لفحص شامل قبل الانطلاق، مما يضمن استمرارية توريد موادك أو نقل حمولاتك دون تعطل مفاجئ يعطل جدولك الزمني.</p>
+                    </div>
+                    <span class="m-number">02</span>
+                </div>
+            </div>
+
+            <div class="masonry-item area-3 reveal">
+                <div class="m-card">
+                    <div class="m-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <div class="m-content">
+                        <h3>معايير النزاهة المالية</h3>
+                        <p>في قطاع السكراب والمعادن، نعتمد على موازين إلكترونية معتمدة، مع تقديم تقارير وزن فورية، لضمان أعلى درجات الشفافية والعدالة في كل عملية.</p>
+                    </div>
+                    <span class="m-number">03</span>
+                </div>
+            </div>
+
+            <div class="masonry-item area-4 reveal">
+                <div class="m-card">
+                    <div class="m-icon"><i class="fa-solid fa-map-marked-alt"></i></div>
+                    <div class="m-content">
+                        <h3>الانتشار الجغرافي الواقعي</h3>
+                        <p>نحن نغطي المملكة فعلياً وليس اسمياً؛ تريلاتنا وسطحاتنا لديها خطوط سير ثابتة تربط بين مدن المملكة الرئيسية والمناطق النائية بكفاءة عالية.</p>
+                    </div>
+                    <span class="m-number">04</span>
+                </div>
+            </div>
+
+            <div class="masonry-item area-5 reveal">
+                <div class="m-card">
+                    <div class="m-icon"><i class="fa-solid fa-hard-hat"></i></div>
+                    <div class="m-content">
+                        <h3>فريق ميداني منضبط</h3>
+                        <p>سائقونا وفنيونا مدربون على أعلى مستويات السلامة المهنية، مما يقلل مخاطر النقل ويضمن وصول "توانك المياه" أو "المواد الإنشائية" لموقعك بأمان تام وهدوء احترافي.</p>
+                    </div>
+                    <span class="m-number">05</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="baas-contact-ultra">
+    <div class="contact-bg-blurred"></div>
+    <div class="contact-dark-overlay"></div>
+    
+    <div class="contact-container-pro">
+        <div class="contact-intro-pro reveal">
+            <span class="pro-tag">دقة في التنفيذ.. سرعة في التواصل</span>
+            <h2 class="pro-title">مركز عمليات <span>شركة بأس</span></h2>
+            <p class="pro-desc">فريق تنسيق الحركة متاح لتلبية طلباتكم وتوجيه الأسطول على مدار الساعة.</p>
+        </div>
+
+        <div class="contact-layout-grid">
+            <div class="contact-cards-area reveal">
+                
+                <div class="management-card-pro">
+                    <div class="m-header">
+                        <i class="fa-solid fa-truck-pickup"></i>
+                        <h4>مسؤول حركة القلابات والسطحات</h4>
+                    </div>
+                    <div class="m-actions">
+                        <a href="tel:0539263398" class="m-btn m-call"><i class="fa-solid fa-phone"></i> اتصال</a>
+                        <a href="https://wa.me/966539263398" class="m-btn m-wa"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+
+                <div class="management-card-pro">
+                    <div class="m-header">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <h4>مسؤول الحركة العام</h4>
+                    </div>
+                    <div class="m-actions">
+                        <a href="tel:0594368198" class="m-btn m-call"><i class="fa-solid fa-phone"></i> اتصال</a>
+                        <a href="https://wa.me/966594368198" class="m-btn m-wa"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+
+                <div class="social-glass-footer">
+                    <a href="https://www.tiktok.com/@m9b08?_r=1&_t=ZS-98n5OvnKaVb" target="_blank" class="soc-link tik"><i class="fa-brands fa-tiktok"></i> تيك توك</a>
+                    <a href="https://www.facebook.com/share/18zjCRyZaC/" target="_blank" class="soc-link fb"><i class="fa-brands fa-facebook-f"></i> فيسبوك</a>
+                </div>
+            </div>
+
+            <div class="contact-map-area reveal">
+    <div class="map-outer-frame" style="position: relative;">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3627.124578143265!2d46.86875!3d24.5981944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDM1JzUzLjUiTiA0NsKwNTInMDcuNSJF!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa" 
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <a href="https://www.google.com/maps?q=24.5981944,46.86875" target="_blank" class="map-external-link">
+            <i class="fa-solid fa-map-location-dot"></i> فتح في خرائط جوجل
+        </a>
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+<footer class="baas-main-footer">
+    <div class="footer-grid">
+        <div class="footer-col brand-col">
+            <h2 class="footer-logo">شركة بأس</h2>
+            <p class="footer-about">نحن القوة المحركة خلف أضخم المشاريع الإنشائية في المملكة العربية السعودية. خبرة 20 عاماً في الحلول اللوجستية المتكاملة وتجارة المعادن.</p>
+            <div class="footer-socials">
+                <a href="https://www.tiktok.com/@m9b08?_r=1&_t=ZS-98n5OvnKaVb" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/share/18zjCRyZaC/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>روابط سريعة</h4>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">عن الشركة</a></li>
+                <li><a href="#services">منظومة خدماتنا</a></li>
+                <li><a href="#blog">المدونة اللوجستية</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>خدماتنا</h4>
+            <ul>
+                <li><a href="#services">شراء سكراب ومعادن</a></li>
+                <li><a href="#services">توريد مواد البناء</a></li>
+                <li><a href="#services">تأجير قلابات وسطحات</a></li>
+                <li><a href="#services">حاويات مخلفات (الرياض)</a></li>
+                <li><a href="#services">تأجير معدات ثقيلة</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>بيانات التواصل</h4>
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:0594368198">0594368198</a>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:0539263398">0539263398</a>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>الرياض - السلي - المنطقة الصناعية</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>جميع الحقوق محفوظة &copy; 2026 شركة بأس للنقل البري</p>
+        <div class="developer-link">
+            تصميم وبرمجة <a href="https://www.facebook.com/share/17UzqgSwiu/" target="_blank">GMTWeb</a>
+        </div>
+    </div>
+</footer>
+
+<div class="floating-actions">
+    <a href="https://wa.me/966594368198" class="f-action wa" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="tel:0594368198" class="f-action call"><i class="fa-solid fa-phone"></i></a>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

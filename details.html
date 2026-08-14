@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>تفاصيل المقال اللوجستي | شركة بأس 2026</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #FFD700; --dark: #000000; --white: #ffffff; --text: #222222; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; }
+        body { background-color: var(--white); color: var(--text); overflow-x: hidden; line-height: 1.8; }
+        .details-header { background: var(--dark); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 4px solid var(--gold); box-shadow: 0 5px 20px rgba(0,0,0,0.2); }
+        .brand-side { display: flex; align-items: center; gap: 15px; }
+        .brand-side h2 { color: var(--gold); font-weight: 900; font-size: 1.5rem; letter-spacing: 1px; }
+        .nav-side .btn-back { text-decoration: none; background: var(--gold); color: var(--dark); padding: 10px 25px; border-radius: 12px; font-weight: 900; display: flex; align-items: center; gap: 10px; transition: 0.3s; border: 2px solid var(--gold); }
+        .nav-side .btn-back:hover { background: transparent; color: var(--gold); }
+        .hero-banner { height: 550px; width: 100%; position: relative; background: var(--dark); overflow: hidden; }
+        .hero-banner img { width: 100%; height: 100%; object-fit: cover; opacity: 0.6; animation: zoomImg 20s infinite alternate; }
+        @keyframes zoomImg { from { transform: scale(1); } to { transform: scale(1.2); } }
+        .hero-content { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 10%; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); }
+        .hero-content h1 { font-size: 4rem; color: var(--gold); font-weight: 900; line-height: 1.2; text-shadow: 0 5px 15px rgba(0,0,0,0.5); margin-bottom: 20px; transform: translateY(30px); opacity: 0; animation: fadeInUp 1s forwards 0.5s; }
+        @keyframes fadeInUp { to { transform: translateY(0); opacity: 1; } }
+        .content-wrapper { max-width: 1300px; margin: 80px auto; padding: 0 5%; display: grid; grid-template-columns: 2fr 1fr; gap: 60px; }
+        .article-body { text-align: justify; }
+        .article-body h2 { font-size: 2.5rem; font-weight: 900; color: var(--dark); margin: 40px 0 25px; padding-right: 20px; border-right: 10px solid var(--gold); background: #fdfdfd; }
+        .article-body p { font-size: 1.35rem; color: #444; margin-bottom: 30px; }
+        .promo-box { background: #fff9e6; border: 2px dashed var(--gold); padding: 30px; border-radius: 20px; margin: 40px 0; }
+        .promo-box h4 { font-weight: 900; font-size: 1.5rem; margin-bottom: 15px; color: var(--dark); }
+        .sidebar { position: sticky; top: 120px; height: fit-content; }
+        .side-card { background: var(--dark); color: var(--white); padding: 40px; border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); margin-bottom: 30px; position: relative; overflow: hidden; }
+        .side-card::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,215,0,0.1) 0%, transparent 70%); }
+        .side-card h3 { color: var(--gold); font-weight: 900; font-size: 1.8rem; margin-bottom: 20px; position: relative; }
+        .side-card ul { list-style: none; position: relative; }
+        .side-card ul li { margin-bottom: 15px; display: flex; align-items: center; gap: 10px; font-weight: 700; }
+        .side-card ul li i { color: var(--gold); }
+        .wa-sticky { background: #25D366; color: #fff; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 15px; padding: 25px; border-radius: 20px; font-weight: 900; font-size: 1.4rem; transition: 0.3s; box-shadow: 0 15px 30px rgba(37, 211, 102, 0.3); }
+        .wa-sticky:hover { transform: scale(1.05); }
+        .footer-details { background: #f4f4f4; padding: 60px 5%; text-align: center; border-top: 1px solid #ddd; }
+        .footer-details p { font-weight: 900; color: #888; font-size: 1.1rem; }
+        @media (max-width: 1024px) {
+            .content-wrapper { grid-template-columns: 1fr; }
+            .hero-content h1 { font-size: 2.5rem; }
+            .hero-banner { height: 400px; }
+            .sidebar { position: relative; top: 0; }
+        }
+        @media (max-width: 480px) {
+            .details-header { padding: 15px 3%; }
+            .brand-side h2 { font-size: 1.1rem; }
+            .nav-side .btn-back { padding: 8px 15px; font-size: 0.8rem; }
+            .article-body h2 { font-size: 1.8rem; }
+            .article-body p { font-size: 1.15rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="details-header">
+        <div class="brand-side">
+            <h2>شركة بأس للنقل البري</h2>
+        </div>
+        <div class="nav-side">
+            <a href="index.html" class="btn-back"><i class="fas fa-arrow-right"></i> الرئيسية</a>
+        </div>
+    </nav>
+    <div id="dynamic-content"></div>
+    <footer class="footer-details">
+        <p>&copy; 2026 شركة بأس للنقل البري - جميع الحقوق محفوظة لعملاق اللوجستيات</p>
+    </footer>
+    <script>
+        const articles = {
+            'scrap': {
+                title: 'اقتصاد تدوير المعادن والسكراب في رؤية 2026',
+                img: 'images/IMG-20260811-WA0015.jpg',
+                content: `
+                    <h2>الريادة في سوق السكراب السعودي</h2>
+                    <p>في عام 2026، أصبحت تجارة المعادن والسكراب العمود الفقري للصناعة التحويلية في المملكة. شركة بأس للنقل البري ليست مجرد ناقل، بل هي شريك استراتيجي في تقييم وجمع وتوريد المعادن بكافة أنواعها. نحن نعتمد على منظومة تسعير دقيقة ترتبط مباشرة بمؤشرات البورصة العالمية لضمان حصول شركائنا على القيمة العادلة والأعلى لأصولهم المعدنية.</p>
+                    <div class="promo-box">
+                        <h4>لماذا نحن ملوك السكراب؟</h4>
+                        <p>نمتلك فرقاً ميدانية مجهزة بأحدث تقنيات القطع والتحميل، مما يمكننا من إخلاء المواقع الإنشائية والمصانع من السكراب في أوقات قياسية، مع دفع فوري وتسهيلات لوجستية لا تتوفر لدى غيرنا.</p>
+                    </div>
+                    <h2>تغطية شاملة لجميع أنواع المعادن</h2>
+                    <p>سواء كنت تمتلك خردة حديد، نحاس، ألمنيوم، أو حتى مخلفات الكابلات الكهربائية، فإن شركة بأس توفر لك أسطول قلابات مجهز خصيصاً لهذه المهام الشاقة. نحن نعي تماماً أن سرعة إخلاء الموقع هي جزء من نجاح مشروعك، لذا نلتزم بجدول زمني صارم لا يقبل التأخير.</p>
+                    <h2>حلول لوجستية ذكية</h2>
+                    <p>في بأس، نستخدم شاحنات مزودة بأنظمة وزن رقمية دقيقة عند التحميل، مما يضمن الشفافية المطلقة بيننا وبين العميل. عام 2026 يفرض علينا استخدام التكنولوجيا في كل خطوة، وهذا ما يميزنا كشركة رائدة في هذا المجال منذ عقدين.</p>
+                `,
+                sideTitle: 'مميزات سكراب بأس',
+                sideList: ['وزن رقمي دقيق', 'دفع نقدي فوري', 'إخلاء سريع للمواقع', 'أسعار بورصة محدثة']
+            },
+            'transport': {
+                title: 'شرايين النقل: كيف نربط مدن المملكة في 2026؟',
+                img: 'images/IMG-20260811-WA0007.jpg',
+                content: `
+                    <h2>أسطول لا يعرف المستحيل</h2>
+                    <p>النقل البري هو الشريان التاجي للاقتصاد، وفي بأس نمتلك أسطولاً يتجاوز مئات الشاحنات الحديثة (تريلات، سطحات، قلابات) موديلات 2025 و2026. كل شاحنة في أسطولنا هي وحدة لوجستية متكاملة مراقبة عبر الأقمار الصناعية لضمان أمن الحمولة وسلامة الطرق.</p>
+                    <div class="promo-box">
+                        <h4>تغطية الـ 2000 كيلومتر</h4>
+                        <p>لا يوجد مكان في المملكة بعيد على أسطول بأس. من تبوك شمالاً إلى جازان جنوباً، ومن الدمام شرقاً إلى جدة غرباً، تريلاتنا تجوب الطرق ليل نهار لتوصيل معداتكم وموادكم بأمان.</p>
+                    </div>
+                    <h2>تكنولوجيا التتبع والتحكم</h2>
+                    <p>في عام 2026، نوفر لعملائنا لوحة تحكم رقمية تتيح لهم تتبع شحناتهم لحظة بلحظة. الشفافية هي شعارنا، والالتزام بالمواعيد هو وعدنا الذي لم نخلفه طوال 20 عاماً من العمل الجاد في قلب الصحراء والمدن.</p>
+                    <h2>توريد مواد البناء والمياه</h2>
+                    <p>لا نكتفي بالنقل، بل نقوم بتوريد أجود أنواع مواد البناء من المحاجر مباشرة، بالإضافة إلى توفير توانك مياه نظيفة للمواقع الإنشائية والمجمعات، مما يجعلنا محطة واحدة (One-Stop-Shop) لكل احتياجات المقاولين.</p>
+                `,
+                sideTitle: 'قدرات الأسطول',
+                sideList: ['تتبع GPS لحظي', 'صيانة دورية شاملة', 'سائقين محترفين', 'تغطية 24/7']
+            },
+            'waste': {
+                title: 'إدارة المخلفات في العاصمة: الرياض 2026 الرقمية',
+                img: 'images/IMG-20260811-WA0031.jpg',
+                content: `
+                    <h2>الرياض: مدينة البناء العالمي</h2>
+                    <p>الرياض اليوم هي أكبر ورشة عمل في العالم، وإدارة مخلفات البناء هي التحدي الأكبر. شركة بأس تقدم خدمتها الحصرية في الرياض لتأجير حاويات المخلفات بأحجام متنوعة (12، 20، 30 ياردة). نحن نضمن لك موقعاً إنشائياً نظيفاً ومنظماً يعكس احترافية شركتك.</p>
+                    <div class="promo-box">
+                        <h4>استجابة الساعتين في الرياض</h4>
+                        <p>نظراً لزحام العاصمة وضغط العمل، قمنا بتخصيص فريق طوارئ في الرياض يضمن تبديل الحاوية الممتلئة خلال ساعتين فقط من طلب العميل، لتجنب أي تعطيل لرافعات الموقع أو فرق العمل.</p>
+                    </div>
+                    <h2>الالتزام البيئي والقانوني</h2>
+                    <p>نحن نعمل بتنسيق كامل مع أمانة منطقة الرياض، ونقوم بتفريغ المخلفات في المرامي الرسمية المعتمدة، مع تزويد العميل بكافة المستندات الإلكترونية التي تثبت التزامه بالأنظمة البيئية لعام 2026.</p>
+                    <h2>أسعار تنافسية للمشاريع الكبرى</h2>
+                    <p>سواء كان مشروعك برجاً شاهقاً في المركز المالي أو فيلاً سكنية في شمال الرياض، نوفر لك عقوداً مرنة (يومية، أسبوعية، شهرية) بأسعار لا تقبل المنافسة، مع جودة خدمة تليق باسم شركة بأس.</p>
+                `,
+                sideTitle: 'خدمات حاويات الرياض',
+                sideList: ['تبديل فوري خلال ساعتين', 'أحجام حاويات متنوعة', 'عقود مرنة للمشاريع', 'تفريغ مرخص قانونياً']
+            }
+        };
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get('id') || 'scrap';
+        const data = articles[id];
+        if(data) {
+            document.getElementById('dynamic-content').innerHTML = `
+                <section class="hero-banner">
+                    <img src="${data.img}" alt="Baas 2026">
+                    <div class="hero-content">
+                        <h1>${data.title}</h1>
+                    </div>
+                </section>
+                <main class="content-wrapper">
+                    <article class="article-body">
+                        ${data.content}
+                    </article>
+                    <aside class="sidebar">
+                        <div class="side-card">
+                            <h3>${data.sideTitle}</h3>
+                            <ul>
+                                ${data.sideList.map(item => `<li><i class="fas fa-check-circle"></i> ${item}</li>`).join('')}
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/966594368198" class="wa-sticky">
+                            تحدث مع خبيرنا الآن <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </aside>
+                </main>
+            `;
+        }
+    </script>
+</body>
+</html>
