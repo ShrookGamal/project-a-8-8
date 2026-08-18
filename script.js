@@ -102,14 +102,26 @@ document.addEventListener('DOMContentLoaded', () => {
             const name = document.getElementById('fname').value;
             const service = document.getElementById('fservice').value;
             const loc = document.getElementById('floc').value;
-            let targetPhone = "966594368198";
+            let targetPhone = "";
             switch (service) {
-                case "قلابات": case "سطحات": case "بوكلينات": case "توريد بناء":
-                    targetPhone = "966594368198"; break;
-                case "حاويات": case "توانك":
-                    targetPhone = "966539263398"; break;
+                case "توانك":
+                case "حاويات":
+                case "توريد بناء":
+                    targetPhone = "966594368198"; 
+                    break;
+
+                case "قلابات":
+                case "سطحات":
+                case "بوكلينات":
+                    targetPhone = "966539263398"; 
+                    break;
+
                 case "شراء سكراب":
-                    targetPhone = "966506534955"; break;
+                    targetPhone = "966506534955"; 
+                    break;
+
+                default:
+                    targetPhone = "966594368198";
             }
             const msg = `طلب خدمة جديد من الموقع:%0A- العميل: ${name}%0A- الخدمة: ${service}%0A- الموقع: ${loc}`;
             window.open(`https://wa.me/${targetPhone}?text=${msg}`, '_blank');
