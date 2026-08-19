@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     break;
 
                 case "شراء سكراب":
-                    targetPhone = "966506534955"; 
+                    targetPhone = "966594368198"; 
                     break;
 
                 default:
